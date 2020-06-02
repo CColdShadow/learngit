@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34915663-3BA0-43D7-A01F-C81D77156097}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apowersoft.Utils.Imaging</RootNamespace>
+    <AssemblyName>Apowersoft.Utils.Imaging</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'EaseUS|AnyCPU'">
+    <OutputPath>bin\EaseUS\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\Libs\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="BinaryStructProcessor.cs" />
+    <Compile Include="Colors.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="Effect\AdjustEffect.cs" />
+    <Compile Include="Effect\BlurEffect.cs" />
+    <Compile Include="Effect\BorderEffect.cs" />
+    <Compile Include="Effect\DropShadowEffect.cs" />
+    <Compile Include="Effect\Effect.cs" />
+    <Compile Include="Effect\FlipEffect.cs" />
+    <Compile Include="Effect\GrayscaleEffect.cs" />
+    <Compile Include="Effect\InvertEffect.cs" />
+    <Compile Include="Effect\MonochromeEffect.cs" />
+    <Compile Include="Effect\PixelateEffect.cs" />
+    <Compile Include="Effect\ReduceColorsEffect.cs" />
+    <Compile Include="Effect\ResizeCanvasEffect.cs" />
+    <Compile Include="Effect\ResizeEffect.cs" />
+    <Compile Include="Effect\RotateEffect.cs" />
+    <Compile Include="Effect\SharpenEffect.cs" />
+    <Compile Include="Effect\TornEdgeEffect.cs" />
+    <Compile Include="EixfProcessor.cs" />
+    <Compile Include="FastBitmap\FastBitmap.cs" />
+    <Compile Include="FastBitmap\FastBitmapOperator.cs" />
+    <Compile Include="Fill\EditableBitmap.cs" />
+    <Compile Include="Fill\FloodFiller.cs" />
+    <Compile Include="Fill\FloodFillRangeQueue.cs" />
+    <Compile Include="GuiRectangle.cs" />
+    <Compile Include="ImageOperator.cs" />
+    <Compile Include="ImageOutput.cs" />
+    <Compile Include="ISurface.cs" />
+    <Compile Include="OutputSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectangleHelper.cs" />
+    <Compile Include="RoundedRectangle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apowersoft.Utils.WinAPI\Apowersoft.Utils.WinAPI.csproj">
+      <Project>{bfc316ab-01bd-49ba-a9a3-842872fe556a}</Project>
+      <Name>Apowersoft.Utils.WinAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+E:\source\ApowerREC\trunck\src\Bin\Release\Apowersoft.Utils.Imaging.dll
+E:\source\ApowerREC\trunck\src\Bin\Release\Apowersoft.Utils.Imaging.pdb
+E:\source\ApowerREC\trunck\src\Apowersoft.Utils.Imaging\obj\Release\Apowersoft.Utils.Imaging.csprojAssemblyReference.cache
+E:\source\ApowerREC\trunck\src\Apowersoft.Utils.Imaging\obj\Release\Apowersoft.Utils.Imaging.csproj.CoreCompileInputs.cache
+E:\source\ApowerREC\trunck\src\Apowersoft.Utils.Imaging\obj\Release\Apowersoft.Utils.Imaging.csproj.CopyComplete
+E:\source\ApowerREC\trunck\src\Apowersoft.Utils.Imaging\obj\Release\Apowersoft.Utils.Imaging.dll
+E:\source\ApowerREC\trunck\src\Apowersoft.Utils.Imaging\obj\Release\Apowersoft.Utils.Imaging.pdb
