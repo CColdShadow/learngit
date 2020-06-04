@@ -71,7 +71,7 @@ namespace Apowersoft.Utils.Imaging {
                 format = (OutputFormat)Enum.Parse(typeof(OutputFormat), strFormat.ToLower());
             }
             catch (ArgumentException e) {
-                log.ErrorFormat("Failed to get output format from str, {0}, {1}.", strFormat, e.Message);
+                log.ErrorFormat("Failed to get output format AAAAfrom str, {0}, {1}.", strFormat, e.Message);
             }
             return format;
         }
